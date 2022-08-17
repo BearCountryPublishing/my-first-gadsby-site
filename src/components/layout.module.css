@@ -22,3 +22,11 @@
   color: rgb(178, 0, 95);
   text-decoration: none;
 }
+
+.site-title {
+  font-size: 2rem;
+  color: white;
+  background-color: deeppink;
+  font-weight: 700;
+  padding: 1rem 1rem;
+}

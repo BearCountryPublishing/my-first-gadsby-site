@@ -1,10 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `My First Gadsby Site`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Bear Country Publishing`,
+    siteUrl: `https://gatsby.bearcountrypublishing.com`,
   },
   plugins: [
     "gatsby-plugin-image",
-    "gatsby-plugin-sharp"
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
+    },
   ],
 }
